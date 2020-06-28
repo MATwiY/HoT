@@ -1,12 +1,10 @@
 class Samolot{
     public Integer model;
     public String defense;
-    //public String[] tekst;
 
     Samolot(Integer m, String d){
         this.model = m;
         this.defense = d;
-        //tekst = new String[model];
     }
 
     public void drawPlane(){
@@ -55,7 +53,6 @@ class Samolot{
     public void defenseON(){
         String line = "";
         String[] tekst = new String[model*2];
-        String[][] table = new String[model * 2][model * model];
         String znak = "";
 
         for(int i = 0; i < model * 2 - 1; ++i){
